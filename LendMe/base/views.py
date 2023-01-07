@@ -3,6 +3,10 @@ from django.contrib.auth.decorators import login_required
 from .forms import FinanceInfo
 # Create your views here.
 
+def home(request):
+
+    return render(request, 'home.html')
+
 @login_required 
 def login(request):
     return render(request, 'login.html')

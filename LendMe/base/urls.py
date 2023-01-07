@@ -7,5 +7,6 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
     path('accounts/profile/', views.profile),
     path('kyc/', views.get_finance_info), 
+    path('home/', views.home)
 ]
 
