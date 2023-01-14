@@ -1,5 +1,5 @@
 {% load static %}
-<html lang="en">
+<!-- <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +14,63 @@
     </div>
 
     
-
     
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lendio</title>
+  <div>
+   <img src="{% static '/images/header.png' %}" alt="Two hands exhanging money" width="10%">
+  </div>
+
+  {% load static %}
+  
+  <link rel="stylesheet" href="{%static '/cass/styles.css' ">
+</head>
+<body>
+  <header>
+    <h1>Lendio</h1>
+    <nav>
+      <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="hero">
+    <h2>Connect with others and share resources</h2>
+    <button>Join now</button>
+  </section>
+  <section id="features">
+    <h2>Features</h2>
+    <ul>
+      <li>Easy to use</li>
+      <li>Secure transactions</li>
+      <li>Wide range of resources</li>
+    </ul>
+  </section>
+  <section id="about">
+    <h2>About us</h2>
+    <p>Our platform connects individuals and allows them to share resources and collaborate with each other.</p>
+  </section>
+  <section id="contact">
+    <h2>Contact us</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea><br>
+      <input type="submit" value="Send">
+    </form>
+  </section>
+  <footer>
+    <p>Copyright ©2022 P2P Platform</p>
+  </footer>
 </body>
 </html>
