@@ -1,5 +1,5 @@
 from django import forms 
-from .models import LendMe
+from .models import Borrower
 
 class LoginForm(forms.Form):
 
@@ -9,8 +9,10 @@ class LoginForm(forms.Form):
 
 class FinanceInfo(forms.ModelForm):
     class Meta: 
-        model = LendMe
-        fields = ['first_name', 'last_name', 'annual_income', 'pan_card', 'annual_income', 'credit_score']
+        model = Borrower
+        borrower_fields = ['first_name', 'last_name', 'annual_income', 'pan_card', 'annual_income', 'credit_score']
+
+
     # first_name = forms.CharField(label='First Name', max_length=255) 
     # last_name = forms.CharField(label='Last Name', max_length=255)
     # pan_card = forms.CharField(label='PAN', max_length=255)
